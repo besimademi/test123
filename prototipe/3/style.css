@@ -1,0 +1,36 @@
+/* Prototipi 3: large logo on white, red menu bar, light centered hero */
+.brand {
+  background: var(--paper);
+  padding: 32px 0 24px;
+}
+
+.brand img { height: 96px; width: auto; margin: 0 auto; }
+
+.menubar { background: var(--red-deep); color: #fff; }
+.menubar .menu { justify-content: center; padding: 6px 0; }
+.menubar .menu a:hover, .menubar .menu a[aria-current] { border-bottom-color: #fff; }
+.menubar .menu .give { color: #fff; background: #000; padding: 6px 14px; }
+
+.hero {
+  background: var(--grey);
+  text-align: center;
+  padding: 64px 0;
+}
+
+.hero p { max-width: 30em; margin: 0 auto 28px; font-size: 20px; color: var(--muted); }
+.hero .btn { margin: 4px; }
+
+.strip { padding: 48px 0 0; }
+.strip .photo { aspect-ratio: 21 / 8; }
+
+.home-body { padding: 48px 0 72px; }
+
+@media (max-width: 760px) {
+  .brand { padding: 22px 0 16px; }
+  .brand img { height: 48px; }
+  .hero { padding: 44px 0; }
+  .hero p { font-size: 18px; }
+  .strip { padding-top: 32px; }
+  .strip .photo { aspect-ratio: 4 / 3; }
+  .home-body { padding: 32px 0 56px; }
+}

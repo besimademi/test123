@@ -1,0 +1,43 @@
+/* Prototipi 1: white strip with the logo centered, dark hero, grey body */
+body { background: var(--grey); }
+
+header {
+  background: var(--paper);
+  border-bottom: 4px solid var(--red);
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+
+.bar img { height: 64px; width: auto; }
+.menu { justify-content: center; }
+
+.hero { background: var(--charcoal); color: #fff; }
+
+.hero .wrap {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  align-items: center;
+  gap: 48px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.hero p { max-width: 28em; font-size: 20px; margin-bottom: 28px; }
+.hero .photo { aspect-ratio: 4 / 3; color: #cfcfcf; }
+
+.home-body { padding: 56px 0 72px; }
+
+@media (max-width: 760px) {
+  .bar { padding-top: 14px; }
+  .bar img { height: 44px; }
+  .hero .wrap { grid-template-columns: 1fr; gap: 32px; padding-top: 40px; padding-bottom: 40px; }
+  .hero p { font-size: 18px; }
+  .home-body { padding: 40px 0 56px; }
+}

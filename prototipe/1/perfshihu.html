@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Përfshihu | Prototipi 1 | Lëvizja Një</title>
+  <link rel="icon" href="../../assets/logo-nje.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../base.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrap bar">
+      <a href="index.html"><img src="../../assets/logo-white.png" alt="Lëvizja Një, ballina" width="1425" height="270"></a>
+      <nav aria-label="Menyja kryesore">
+          <ul class="menu">
+            <li><a href="index.html">Ballina</a></li>
+            <li><a href="per-ne.html">Për ne</a></li>
+            <li><a href="platforma.html">Platforma</a></li>
+            <li><a href="perfshihu.html" aria-current="page">Përfshihu</a></li>
+            <li><a href="kontakti.html">Kontakti</a></li>
+            <li><a class="give" href="dhuro.html">Dhuro</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="wrap page">
+      <h1>Përfshihu</h1>
+      <p class="lead">[Një fjali ftese: pse duhet t'i bashkohen lëvizjes.]</p>
+      <section class="cards">
+        <div><h2>Bëhu anëtar</h2><p>[Si bëhet dikush anëtar i lëvizjes.]</p></div>
+        <div><h2>Bëhu vullnetar</h2><p>[Si mund të ndihmojë në terren ose në internet.]</p></div>
+        <div><h2>Shpërndaje zërin</h2><p>[Si mund ta ndajë mesazhin me të tjerët.]</p></div>
+      </section>
+      <section class="block">
+        <h2>Regjistrohu</h2>
+        <form data-subject="Përfshihu në Lëvizjen Një">
+          <label>Emri dhe mbiemri <input name="Emri" autocomplete="name" required></label>
+          <label>Email <input type="email" name="Email" autocomplete="email" required></label>
+          <label>Qyteti <input name="Qyteti" autocomplete="address-level2"></label>
+          <label>Si dëshiron të përfshihesh?
+            <select name="Përfshirja">
+              <option>Anëtar</option>
+              <option>Vullnetar</option>
+              <option>Tjetër</option>
+            </select>
+          </label>
+          <button class="btn red" type="submit">Dërgo</button>
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer><div class="wrap"><p>© 2026 Lëvizja Një</p></div></footer>
+  <nav class="switch" aria-label="Prototipet"><span>Prototipi</span><a href="../1/perfshihu.html" aria-current="page">1</a><a href="../2/perfshihu.html">2</a><a href="../3/perfshihu.html">3</a></nav>
+  <script src="../../script.js"></script>
+</body>
+</html>
